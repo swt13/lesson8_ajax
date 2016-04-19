@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Shane Thompson
+Date: 4/18/16 
 Filename:   Movie.html
 - ->
 <head>
@@ -52,7 +52,51 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
-
+       
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Type:</h3>
+            <p class="list-group-item-text lead text-primary" id="Type">  </p>
+        </a> 
+        
+       
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime">  </p>
+        </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Director:</h3>
+            <p class="list-group-item-text lead text-primary" id="Director">  </p>
+        </a> 
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbRating:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbRating">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbVotes:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbVotes">  </p>
+        </a>
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdbID:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbID">  </p>
+        </a>
+        
+         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Metascore:</h3>
+            <p class="list-group-item-text lead text-primary" id="Metascore">  </p>
+        </a>
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Country:</h3>
+            <p class="list-group-item-text lead text-primary" id="Country">  </p>
+        </a>
+        
+       
+        
     </div>
 </div> 
     <script>
@@ -70,6 +114,15 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Type').html(json.Type);
+                     $('#Runtime').html(json.Runtime);
+                     $('#Director').html(json.Director);
+                     $('#imdbRating').html(json.imdbRating);
+                     $('#imdbVotes').html(json.imdbVotes);
+                     $('#imdbID').html(json.imdbID); 
+                     $('#Metascore').html(json.Metascore);
+                     $('#Country').html(json.Country);
+                     
                 })
                 .fail(function() {
                       alert("Posting failed.");              
